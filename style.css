@@ -43,14 +43,57 @@ margin:10px;
 padding:10px 20px;
 background:#38bdf8;
 color:black;
-text-decoration:none;
 border-radius:8px;
+text-decoration:none;
 }
 
-/* SECTIONS */
+/* SECTION */
 section{
 padding:80px 10%;
 text-align:center;
+}
+
+/* EDUCATION */
+.education-container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.edu-card{
+background:#0f172a;
+padding:25px;
+border-radius:15px;
+width:280px;
+transition:0.3s;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.edu-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(56,189,248,0.3);
+}
+
+.highlight-edu{
+border:2px solid #22c55e;
+}
+
+.edu-card h3{
+color:#38bdf8;
+}
+
+.edu-institute{
+color:#94a3b8;
+font-size:14px;
+margin:10px 0;
+}
+
+.edu-score{
+font-size:20px;
+font-weight:bold;
+color:#22c55e;
 }
 
 /* PROJECTS */
@@ -86,8 +129,8 @@ width:250px;
 .cert-container{
 display:flex;
 gap:20px;
-justify-content:center;
 flex-wrap:wrap;
+justify-content:center;
 }
 
 .cert-card img{
@@ -107,31 +150,6 @@ flex-wrap:wrap;
 background:#1e293b;
 padding:10px 15px;
 border-radius:8px;
-}
-
-/* EDUCATION */
-.education-container{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.edu-card{
-background:#0f172a;
-padding:20px;
-border-radius:10px;
-width:250px;
-transition:0.3s;
-}
-
-.edu-card:hover{
-transform:translateY(-5px);
-}
-
-.score{
-color:#22c55e;
-font-weight:bold;
 }
 
 /* CONTACT */
@@ -154,309 +172,4 @@ padding:10px;
 background:#38bdf8;
 border:none;
 border-radius:5px;
-}text-decoration:none;
-color:white;
-font-weight:500;
-padding:5px;
-}
-
-/* underline animation */
-nav ul li a::after{
-content:"";
-position:absolute;
-left:0;
-bottom:-3px;
-width:0;
-height:2px;
-background:#38bdf8;
-transition:0.3s;
-}
-
-nav ul li a:hover::after{
-width:100%;
-}
-
-/* HERO */
-.home{
-text-align:center;
-padding:70px 20px;
-}
-
-.profile{
-width:110px;
-border-radius:50%;
-border:3px solid #38bdf8;
-box-shadow:0 0 15px #38bdf8;
-}
-
-.home span{
-color:#38bdf8;
-}
-
-.tagline{
-color:#94a3b8;
-margin-bottom:10px;
-}
-
-/* BUTTONS */
-.buttons a{
-margin:8px;
-padding:10px 18px;
-background:#38bdf8;
-color:black;
-border-radius:6px;
-text-decoration:none;
-transition:0.3s;
-display:inline-block;
-}
-
-.buttons a:hover{
-transform:scale(1.05);
-background:#0ea5e9;
-}
-
-/* PROJECTS */
-#projects{
-padding:60px;
-text-align:center;
-}
-
-.project-container{
-display:flex;
-gap:30px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-width:280px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px black;
-}
-
-.card ul{
-text-align:left;
-padding-left:18px;
-}
-
-.tech{
-color:#38bdf8;
-font-size:13px;
-margin-top:10px;
-}
-
-/* CODING */
-#proof{
-padding:60px;
-text-align:center;
-}
-
-.proof-container{
-display:flex;
-gap:30px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.proof-card{
-background:#1e293b;
-padding:20px;
-width:250px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.proof-card:hover{
-transform:translateY(-8px);
-}
-
-.highlight{
-color:#38bdf8;
-margin-bottom:10px;
-}
-
-/* PROGRESS BARS */
-.bar{
-height:6px;
-background:#0f172a;
-margin:8px 0;
-border-radius:5px;
-overflow:hidden;
-}
-
-.bar span{
-display:block;
-height:100%;
-background:#38bdf8;
-border-radius:5px;
-}
-
-/* CERTIFICATES (IMAGE STYLE) */
-
-#certificates{
-padding:60px;
-text-align:center;
-}
-
-.cert-container{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-}
-
-.cert-card{
-background:none;
-padding:0;
-width:320px;
-border-radius:10px;
-overflow:hidden;
-}
-
-.cert-card img{
-width:100%;
-height:auto;
-border-radius:10px;
-transition:0.3s;
-cursor:pointer;
-box-shadow:0 8px 25px rgba(0,0,0,0.6);
-}
-
-.cert-card img:hover{
-transform:scale(1.05);
-}
-
-.cert-card h3,
-.cert-card p{
-display:none;
-}
-
-/* SKILLS */
-#skills{
-padding:60px;
-text-align:center;
-}
-
-.skills{
-margin-top:20px;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-max-width:600px;
-margin-left:auto;
-margin-right:auto;
-}
-
-.skills span{
-margin:8px;
-padding:10px 18px;
-background:#1e293b;
-border-radius:20px;
-transition:0.3s;
-}
-
-.skills span:hover{
-background:#38bdf8;
-color:black;
-transform:scale(1.05);
-}
-
-/* EDUCATION */
-#education {
-padding: 80px 10%;
-text-align: center;
-}
-
-.education-container {
-display: flex;
-justify-content: center;
-gap: 30px;
-flex-wrap: wrap;
-margin-top: 40px;
-}
-
-.edu-card {
-background: #0f172a;
-padding: 25px;
-border-radius: 15px;
-width: 300px;
-transition: 0.3s;
-box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-
-.edu-card:hover {
-transform: translateY(-8px);
-box-shadow: 0 0 25px rgba(0,255,255,0.2);
-}
-
-.edu-card h3 {
-color: #38bdf8;
-margin-bottom: 10px;
-}
-
-.edu-institute {
-font-size: 14px;
-color: #94a3b8;
-margin-bottom: 10px;
-}
-
-.edu-score {
-font-size: 18px;
-font-weight: 600;
-color: #22c55e;
-}
-/* CONTACT */
-#contact{
-padding:60px;
-text-align:center;
-}
-
-form{
-display:flex;
-flex-direction:column;
-max-width:400px;
-margin:auto;
-}
-
-input,textarea{
-margin:10px 0;
-padding:12px;
-border:none;
-border-radius:6px;
-background:#1e293b;
-color:white;
-outline:none;
-}
-
-input:focus,textarea:focus{
-border:1px solid #38bdf8;
-}
-
-button{
-background:#38bdf8;
-padding:10px;
-border:none;
-border-radius:6px;
-cursor:pointer;
-transition:0.3s;
-}
-
-button:hover{
-background:#0ea5e9;
-transform:scale(1.05);
-}
-
-/* FOOTER */
-footer{
-text-align:center;
-padding:20px;
-border-top:1px solid #1e293b;
-margin-top:20px;
 }

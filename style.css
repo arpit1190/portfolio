@@ -1,3 +1,4 @@
+/* GLOBAL */
 body{
 font-family:Poppins;
 margin:0;
@@ -23,6 +24,8 @@ z-index:1000;
 nav ul{
 display:flex;
 list-style:none;
+margin:0;
+padding:0;
 }
 
 nav ul li{
@@ -66,7 +69,7 @@ border:3px solid #38bdf8;
 box-shadow:0 0 15px #38bdf8;
 }
 
-span{
+.home span{
 color:#38bdf8;
 }
 
@@ -84,6 +87,7 @@ color:black;
 border-radius:6px;
 text-decoration:none;
 transition:0.3s;
+display:inline-block;
 }
 
 .buttons a:hover{
@@ -119,6 +123,7 @@ box-shadow:0 10px 25px black;
 
 .card ul{
 text-align:left;
+padding-left:18px;
 }
 
 .tech{
@@ -127,7 +132,7 @@ font-size:13px;
 margin-top:10px;
 }
 
-/* CODING SECTION */
+/* CODING */
 #proof{
 padding:60px;
 text-align:center;
@@ -157,7 +162,7 @@ color:#38bdf8;
 margin-bottom:10px;
 }
 
-/* bars */
+/* PROGRESS BARS */
 .bar{
 height:6px;
 background:#0f172a;
@@ -173,7 +178,47 @@ background:#38bdf8;
 border-radius:5px;
 }
 
-/* SKILLS (FIXED CENTER) */
+/* CERTIFICATES (IMAGE STYLE) */
+
+#certificates{
+padding:60px;
+text-align:center;
+}
+
+.cert-container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.cert-card{
+background:none;
+padding:0;
+width:320px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.cert-card img{
+width:100%;
+height:auto;
+border-radius:10px;
+transition:0.3s;
+cursor:pointer;
+box-shadow:0 8px 25px rgba(0,0,0,0.6);
+}
+
+.cert-card img:hover{
+transform:scale(1.05);
+}
+
+.cert-card h3,
+.cert-card p{
+display:none;
+}
+
+/* SKILLS */
 #skills{
 padding:60px;
 text-align:center;
